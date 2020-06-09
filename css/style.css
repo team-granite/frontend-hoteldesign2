@@ -1,0 +1,117 @@
+/* UNIVERSAL SELECTOR TO REMOVE WHITESPACES */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* HEADER IMAGE */
+.header{
+    width: 100%;
+    height: 450px;
+    background: #C4C4C4;
+    background-image: url(/img/fc6fb888051715\ 1\ \(1\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+}
+
+/* FACILITIES */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 40px;
+    line-height: 49px;
+    color: #B18B11;
+}
+
+/*KERAMO HOTEL */
+.nav-icon{
+    color: #B18B11;
+    background-color:#1C323A;
+    text-align: center;
+    width: 120px;
+    padding: 28px 13px 40px 13px; 
+    font-family: Montserrat;
+    font-family: Abhaya Libre ExtraBold;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 25px;
+    line-height: 30px;
+    margin: 0px 0px 0px 60px;
+}
+/*NAVIGATION*/
+.topnav{
+    text-align: right;
+    padding: 0px 0px 0px 0px;
+    margin-top: -110px;
+}
+.icon {
+    display: none;
+}
+/*NAVIGATION LINK*/
+.topnav a{
+    color: #FFFFFF;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    text-decoration: none;
+    padding: 20px 40px 0px 0px; 
+}
+#active{
+    color:#B18B11;
+}
+
+/*MOBILE RESPONSIVE NAVIGATION */
+@media screen and (max-width: 750px){
+    .nav-icon{
+        margin:-10px 0px 0px 0px;
+        height: 5px;
+        width: 100%;
+        text-align: left;
+    }
+}
+@media screen and (max-width: 750px){
+    .topnav{
+        padding: 73px 0px 0px 0px;
+        margin-right: -27px;
+    }
+    .icon{
+        margin-top: -25px;
+    }
+}
+/* RESPONSIVE NAVIGATION LINK*/
+@media screen and (max-width: 700px) {
+    .topnav a {display: none;}
+    .topnav a.icon {
+    display: block;
+    position: fixed;
+    right: 0;
+    
+    }
+}
+@media screen and (max-width: 700px) {
+    .topnav.responsive {
+        position: relative;
+        padding-top: 100px;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    .topnav.responsive a {
+    display: block;
+    text-align: center;
+    padding-top: 25px;
+    font-weight: bold;
+    }
+    .topnav.responsive a.icon{
+        margin-top: -292px;
+    }
+    .centered{margin-top: 90px;}
+}
