@@ -1,0 +1,206 @@
+/*---- Global style rules ----*/
+body {
+  margin: 0;
+  font-family: "poppins", sans-serif;
+  background: #E5E5E5;
+}
+
+/*--- Header start ---*/
+.header {
+  background-image: url(../images/hotelb.png);
+  background-position: center;
+  width: 100%;
+  height: 70vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.flex {
+  display: flex;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.header .flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo {
+  background-color: darkslategray;
+  background-size: 20%;
+  font-size: 80%;
+  color: #b67b2fea;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-bar li a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  margin: 0 12px;
+  padding-top: 10px;
+  color: #fff;
+}
+
+.banner {
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  margin-top: 100px;
+}
+
+/* beginning of contact form container */
+.contact-container{
+  width: 100%;
+  height: 350px;
+  display: flex;
+  margin-top: 10px;
+}
+.form-container{
+  float: left;
+  order: 1;
+  margin-left: 70px;
+  width: 50%;
+  margin-top:22px;
+  text-align: center;
+}
+.box{
+  width: 320px;
+  height: 50px;
+  background: #FFFFFF;
+  border: 1px solid #D9D3D3;
+  border-radius: 15px;
+  margin-top: 10px;
+  outline: none;
+  font-size: 20px;
+  padding-left: 10px;
+}
+#message{
+  height: 130px;
+}
+#send{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #FFFFFF;
+  align-self: center;
+  margin: 12px 0px;
+  background: #B18B11;
+  border-radius: 12px;
+  width: 100px;
+  height: 40px;
+  border: none;
+  outline: none;
+}
+::placeholder{
+  font-size: 20px;
+  margin-left: 20px;
+  position: top
+}
+:-ms-input-placeholder{
+  font-size: 20px;
+  margin-left: 20px;
+  position: top
+}
+::-ms-input-placeholder{
+  font-size: 20px;
+  margin-left: 20px;
+  position: top
+}
+.details{
+  width: 45%;
+  float: right;
+  order: 2;
+  margin-left: 30px;
+}
+.location-header{
+  font-family: Montserrat;
+  font-style: normal;
+  font-size: 35px;
+  line-height: 33px;
+  color: black
+  font: bold;
+}
+.location-details{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px
+  color:black;
+}
+/* Ending of contact form*/
+.map-container{
+  background-image: url(../images/MapsicleMap.png);
+  background-position: center;
+  width: 90%;
+  height: 300px;
+  margin-left:5%;
+  margin-bottom:70px;
+  margin-top: 50px;
+}
+/*--- Footer Start  ---*/
+
+.footer{
+  background: darkslategrey;
+  min-height: 250px;
+  width: 100%;
+  justify-content: space-between;
+  padding-top: 25px;
+}
+.address {
+  color: #fff;
+  font-size: 12pt;
+  float: left;
+  order: 2;
+  min-width:33%;
+}
+
+.location {
+  opacity: 0.5;
+}
+
+.footer-logo {
+  color: #b67b2fea;
+  margin-left: 70px;
+  font-size: 5vh;
+  float: left;
+  order: 1;
+  min-width:33%;
+}
+
+.follow {
+  color: #fff;
+  margin-right: 70px;
+  float: left;
+  order: 3;
+}
+/* adjusting the screen for responsiveness*/
+@media screen and (max-width: 870px){
+  .footer{
+    min-height: 500px;
+  }
+}
+@media screen and (max-width: 700px){
+  .form-container{
+    width: 100%;
+    margin-left: 30px; 
+  }
+  .details{
+    width: 100%;
+    margin-left: 10px;
+    text-align: center;
+  }
+  .contact-container{
+    flex-wrap: wrap;
+    height: 600px;
+  }
+
+}
