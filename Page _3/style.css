@@ -1,462 +1,721 @@
-
-/* UNIVERSAL SELECTOR TO REMOVE WHITESPACES */
-*{
-    margin: 0;
+* {
     padding: 0;
+    border: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
-/* HEADER IMAGE */
-.header{
-    width: 100%;
-    height: 450px;
-    background: #C4C4C4;
+body {
+    font-family: montserrat;
+}
+.nav-img {
     background-image: url(image/img7.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: 100%;
+    height: 606px;
 }
-
-/* FACILITIES */
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-transform: uppercase;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bolder;
-    font-size: 40px;
-    line-height: 49px;
-    color: #B18B11;
+.navBg {
+   
+    width: 100%;
+    height: 606px;
+    background: rgba(196, 196, 196, 0.1);
+    transform: rotate(-0.36deg);
 }
-
-/*KERAMO HOTEL */
-.nav-icon{
-    color: #B18B11;
-    background-color:#1C323A;
-    text-align: center;
-    width: 120px;
-    padding: 28px 13px 40px 13px; 
-    font-family: Montserrat;
+label.logo p {
+    width: 189px;
+    height: 208px;
+    background: #1C323A;
     font-family: Abhaya Libre ExtraBold;
     font-style: normal;
-    font-weight: bolder;
-    font-size: 25px;
-    line-height: 30px;
-    margin: 0px 0px 0px 60px;
+    font-weight: 800;
+    font-size: 40px;
+    text-align: center;
+    color: #B18B11;
+    border: 1px solid #B18B11;
+    padding: 10px;
+    margin-top: -20px;
+    margin-left: 100px;
+    padding-top: 55px;
 }
-/*NAVIGATION*/
-.topnav{
-    text-align: right;
-    padding: 0px 0px 0px 0px;
-    margin-top: -110px;
+nav ul {
+    float: right;
+    margin-right: 20px;
+    margin-top: -230px;
+    text-transform: uppercase;
+    margin-right: 90px;
 }
-.icon {
-    display: none;
-}
-/*NAVIGATION LINK*/
-.topnav a{
-    color: #FFFFFF;
+
+  nav ul li {
+      display: inline-block;
+      line-height: 80px;
+      margin: 0 13px;
+  }
+  nav ul li a {
+       color: white;
+       font-family: Montserrat;
+       font-style: normal;
+       font-weight: 500;
+       font-size: 18px;
+  }
+  a.active, a:hover {
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
-    font-size: 15px;
-    line-height: 22px;
-    text-decoration: none;
-    padding: 20px 40px 0px 0px; 
-}
-#active{
-    color:#B18B11;
-}
+    font-size: 18px;
+    color: #B18B11;
+  }
+  .checkbtn {
+       font-size: 030px;
+       color: white;
+       float: right;
+       line-height: 80px;
+       margin-right: 40px;
+       margin-top: 20px;
+       cursor: pointer;
+       display: none;
+  }
+  #check {
+      display: none;
+  }
 
-/* MOBILE RESPONSIVE NAVIGATION */
-@media screen and (max-width: 750px){
-    .nav-icon{
-        margin:-10px 0px 0px 0px;
-        height: 5px;
+
+  /* *------------------------------------------------------------------------------------------------------------------------*/ 
+
+
+  .bodyContainer {
+      position: absolute;
+      background: #E5E5E5;
+      height: 1350px;
+      width: 100%;
+      top: 550px;
+  }
+  
+  .pic1
+  {
+      position: absolute;
+      width: 386px;
+      height: 386px;
+      left: 45px;
+      top: 76px;
+  }
+  .pic1 .name
+  {
+      position: absolute;
+      width: 297px;
+      height: 37px;
+      left: 38px;
+      top: 402px;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 37px;
+      color: #000000;
+  }
+  
+  .pic1 .description
+  {
+      position: absolute;
+      width: 383px;
+      height: 98px;
+      left: 0px;
+      top: 454px;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+      color: #000000;
+      margin-bottom: 10px;
+  }
+  
+  /*---------------------------------------------------------------------------------------------------------------------*/
+  
+  .img2 {
+      position: absolute;
+      width: 386px;
+      height: 386px;
+      left: 480px;
+      top: 76px;
+  }
+  
+  .pic2
+  {
+      position: absolute;
+      width: 386px;
+      height: 386px;
+      left: 480px;
+      top: 76px;
+      background: rgba(28, 50, 58, 0.29);
+     
+  }
+  .pic2 img {
+      position: absolute;
+      left: 36.33%;
+      right: 8.33%;
+      top: 35.61%;
+      bottom: 8.33%;
+  }
+  
+  .pic2 .name
+  {
+      position: absolute;
+      width: 297px;
+      height: 37px;
+      left: 68px;
+      top: 402px;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 37px;
+      color: #000000;
+  }
+  .pic2 .description
+  {
+      position: absolute;
+      width: 383px;
+      height: 98px;
+      left: 0px;
+      top: 454px;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+      color: #000000;
+      margin-bottom: 10px;
+  }
+  /*---------------------------------------------------------------------------------------------------------------------*/
+  
+  .img3 {
+      position: absolute;
+      width: 386px;
+      height: 386px;
+      left: 922px;
+      top: 76px;
+  }
+  
+  .pic3
+  {
+      position: absolute;
+      width: 386px;
+      height: 386px;
+      left: 922px;
+      top: 76px;
+      background: rgba(56, 2, 14, 0.29);
+  }
+  
+  .pic3 img {
+      position: absolute;
+      left: 36.33%;
+      right: 8.33%;
+      top: 35.61%;
+      bottom: 8.33%;
+  }
+  
+  .pic3 .name
+  {
+      position: absolute;
+      width: 297px;
+      height: 37px;
+      left: 68px;
+      top: 402px;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 37px;
+      color: #000000;
+  }
+  .pic3 .description
+  {
+      position: absolute;
+      width: 383px;
+      height: 98px;
+      left: 0px;
+      top: 454px;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+      color: #000000;
+      margin-bottom: 10px;
+  }
+  /*---------------------------------------------------------------------------------------------------------------------*/ 
+  .img4 {
+      position: absolute;
+      width: 386px;
+      height: 386px;
+      left: 45px;
+      top: 700px;
+  }
+  
+  .pic4
+  {
+      position: absolute;
+      width: 386px;
+      height: 386px;
+      left: 45px;
+      top: 700px;
+      background: rgba(177, 139, 17, 0.29);
+  }
+  .pic4 img {
+      position: absolute;
+      left: 36.33%;
+      right: 8.33%;
+      top: 35.61%;
+      bottom: 8.33%;
+  }
+  
+  .pic4 .name
+  {
+      position: absolute;
+      width: 297px;
+      height: 37px;
+      left: 68px;
+      top: 402px;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 37px;
+      color: #000000;
+  }
+  .pic4 .description
+  {
+      position: absolute;
+      width: 383px;
+      height: 98px;
+      left: 0px;
+      top: 454px;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+      color: #000000;
+      margin-bottom: 10px;
+  }
+  /*---------------------------------------------------------------------------------------------------------------------*/
+  .img5 {
+      position: absolute;
+      width: 386px;
+      height: 386px;
+      left: 480px;
+      top: 700px;
+  }
+  
+  
+  .pic5
+  {
+      position: absolute;
+      width: 386px;
+      height: 386px;
+      left: 480px;
+      top: 700px;
+      background: rgba(28, 50, 58, 0.29);
+      
+  }
+  .pic5 img {
+      position: absolute;
+      left: 36.33%;
+      right: 8.33%;
+      top: 35.61%;
+      bottom: 8.33%;
+  }
+  
+  .pic5 .name
+  {
+      position: absolute;
+      width: 303px;
+      height: 37px;
+      left: 68px;
+      top: 402px;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 37px;
+      color: #000000;
+  }
+  .pic5 .description
+  {
+      position: absolute;
+      width: 383px;
+      height: 98px;
+      left: 0px;
+      top: 454px;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+      color: #000000;
+      margin-bottom: 10px;
+  }
+  /*---------------------------------------------------------------------------------------------------------------------*/
+  .img6 {
+      position: absolute;
+      width: 386px;
+      height: 386px;
+      left: 922px;
+      top: 700px;
+  }
+  
+  .pic6
+  {
+      position: absolute;
+      width: 386px;
+      height: 386px;
+      left: 922px;
+      top: 700px;
+      background: rgba(56, 2, 14, 0.29);
+      float: left;
+  }
+  
+  .pic6 img {
+      position: absolute;
+      left: 36.33%;
+      right: 8.33%;
+      top: 35.61%;
+      bottom: 8.33%;
+  }
+  
+  .pic6 .name
+  {
+      position: absolute;
+      width: 332px;
+      height: 37px;
+      left: 38px;
+      top: 402px;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 37px;
+      color: #000000;
+  }
+  .pic6 .description
+  {
+      position: absolute;
+      width: 383px;
+      height: 98px;
+      left: 0px;
+      top: 454px;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+      color: #000000;
+      margin-bottom: 10px;
+  }
+  
+
+
+  /* ALL RESPONSIVENESS */
+  @media (max-width: 1200px) {
+    .bodyContainer {
+        position: absolute;
+        background: #E5E5E5;
+        height: 1250px;
         width: 100%;
-        text-align: left;
+        top: 550px;
     }
-}
-@media screen and (max-width: 750px){
-    .topnav{
-        padding: 73px 0px 0px 0px;
-        margin-right: -27px;
-    }
-    .icon{
-        margin-top: -25px;
-    }
-}
-/* RESPONSIVE NAVIGATION LINK*/
-@media screen and (max-width: 700px) {
-    .topnav a {display: none;}
-    .topnav a.icon {
-    display: block;
-    position: fixed;
-    right: 0;
-    }
-}
-@media screen and (max-width: 700px) {
-    .topnav.responsive {
-        position: relative;
-        padding-top: 100px;
-        background-color: rgba(0, 0, 0, 0.1);
-    }
-    .topnav.responsive a {
-    display: block;
-    text-align: center;
-    padding-top: 25px;
-    font-weight: bold;
-    }
-    .topnav.responsive a.icon{
-        margin-top: -292px;
-    }
-    .centered{margin-top: 90px;}
-} 
-
-
-/*------------------------------------------------------------------------------------------------------------------------*/
-
-
-.bodyContainer {
-    position: absolute;
-    background: #E5E5E5;
-    height: 1350px;
-    width: 100%;
-    top: 450px;
-}
-
-.pic1
-{
-    position: absolute;
-    width: 386px;
-    height: 386px;
-    left: 45px;
-    top: 76px;
-}
-.pic1 .name
-{
-    position: absolute;
-    width: 297px;
-    height: 37px;
-    left: 38px;
-    top: 402px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 37px;
-    color: #000000;
-}
-
-.pic1 .description
-{
-    position: absolute;
-    width: 383px;
-    height: 98px;
-    left: 0px;
-    top: 454px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-    color: #000000;
-    margin-bottom: 10px;
-}
-
-/*---------------------------------------------------------------------------------------------------------------------*/
-
-.img2 {
-    position: absolute;
-    width: 386px;
-    height: 386px;
-    left: 480px;
-    top: 76px;
-}
-
-.pic2
-{
-    position: absolute;
-    width: 386px;
-    height: 386px;
-    left: 480px;
-    top: 76px;
-    background: rgba(28, 50, 58, 0.29);
-   
-}
-.pic2 img {
-    position: absolute;
-    left: 36.33%;
-    right: 8.33%;
-    top: 35.61%;
-    bottom: 8.33%;
-}
-
-.pic2 .name
-{
-    position: absolute;
-    width: 297px;
-    height: 37px;
-    left: 68px;
-    top: 402px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 37px;
-    color: #000000;
-}
-.pic2 .description
-{
-    position: absolute;
-    width: 383px;
-    height: 98px;
-    left: 0px;
-    top: 454px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-    color: #000000;
-    margin-bottom: 10px;
-}
-/*---------------------------------------------------------------------------------------------------------------------*/
-
-.img3 {
-    position: absolute;
-    width: 386px;
-    height: 386px;
-    left: 922px;
-    top: 76px;
-}
-
-.pic3
-{
-    position: absolute;
-    width: 386px;
-    height: 386px;
-    left: 922px;
-    top: 76px;
-    background: rgba(56, 2, 14, 0.29);
-}
-
-.pic3 img {
-    position: absolute;
-    left: 36.33%;
-    right: 8.33%;
-    top: 35.61%;
-    bottom: 8.33%;
-}
-
-.pic3 .name
-{
-    position: absolute;
-    width: 297px;
-    height: 37px;
-    left: 68px;
-    top: 402px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 37px;
-    color: #000000;
-}
-.pic3 .description
-{
-    position: absolute;
-    width: 383px;
-    height: 98px;
-    left: 0px;
-    top: 454px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-    color: #000000;
-    margin-bottom: 10px;
-}
-/*---------------------------------------------------------------------------------------------------------------------*/ 
-.img4 {
-    position: absolute;
-    width: 386px;
-    height: 386px;
-    left: 45px;
-    top: 700px;
-}
-
-.pic4
-{
-    position: absolute;
-    width: 386px;
-    height: 386px;
-    left: 45px;
-    top: 700px;
-    background: rgba(177, 139, 17, 0.29);
-}
-.pic4 img {
-    position: absolute;
-    left: 36.33%;
-    right: 8.33%;
-    top: 35.61%;
-    bottom: 8.33%;
-}
-
-.pic4 .name
-{
-    position: absolute;
-    width: 297px;
-    height: 37px;
-    left: 68px;
-    top: 402px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 37px;
-    color: #000000;
-}
-.pic4 .description
-{
-    position: absolute;
-    width: 383px;
-    height: 98px;
-    left: 0px;
-    top: 454px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-    color: #000000;
-    margin-bottom: 10px;
-}
-/*---------------------------------------------------------------------------------------------------------------------*/
-.img5 {
-    position: absolute;
-    width: 386px;
-    height: 386px;
-    left: 480px;
-    top: 700px;
-}
-
-
-.pic5
-{
-    position: absolute;
-    width: 386px;
-    height: 386px;
-    left: 480px;
-    top: 700px;
-    background: rgba(28, 50, 58, 0.29);
     
-}
-.pic5 img {
-    position: absolute;
-    left: 36.33%;
-    right: 8.33%;
-    top: 35.61%;
-    bottom: 8.33%;
-}
+    .pic1
+    {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        left: 25px;
+        top: 76px;
+    }
+    .pic1 img {
+        width: 300px;
+        height: 300px;
+    }
+    .pic1 .name
+    {
+        width: 297px;
+        height: 37px;
+        left: 38px;
+        top: 300px;
+        font-size: 20px;
+        line-height: 37px;
+        font-weight: bold;
+    }
+    
+    .pic1 .description
+    {
+        width: 300px;
+        height: 98px;
+        left: 0px;
+        top: 334px;
+        font-weight: 500;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    
+    /*---------------------------------------------------------------------------------------------------------------------*/
+    
+    .img2 {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        left: 360px;
+        top: 76px;
+    }
+    
+    .pic2
+    {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        left: 360px;
+        top: 76px;
+        background: rgba(28, 50, 58, 0.29);
+       
+    }
+    .pic2 img {
+        position: absolute;
+        left: 36.33%;
+        right: 8.33%;
+        top: 35.61%;
+        bottom: 8.33%;
+    }
+    
+    .pic2 .name
+    {
+      
+        width: 297px;
+        height: 37px;
+        left: 68px;
+        top: 300px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .pic2 .description
+    {
+  
+        width: 300px;
+        height: 98px;
+        left: 0px;
+        top: 334px;
+        font-size: 15px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+    /*---------------------------------------------------------------------------------------------------------------------*/
+    
+    .img3 {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        left: 700px;
+        top: 76px;
+    }
+    
+    .pic3
+    {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        left: 700px;
+        top: 76px;
+        background: rgba(56, 2, 14, 0.29);
+    }
+    
+    .pic3 img {
+        position: absolute;
+        left: 36.33%;
+        right: 8.33%;
+        top: 35.61%;
+        bottom: 8.33%;
+    }
+    
+    .pic3 .name
+    {
+        width: 297px;
+        height: 37px;
+        left: 68px;
+        top: 300px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .pic3 .description
+    {
+        width: 300px;
+        height: 98px;
+        left: 0px;
+        top: 334px;
+        font-size: 15px;
+    }
+    /*---------------------------------------------------------------------------------------------------------------------*/ 
+    .img4 {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        left: 25px;
+        top: 600px;
+    }
+    
+    .pic4
+    {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        left: 25px;
+        top: 600px;
+        background: rgba(177, 139, 17, 0.29);
+    }
+    .pic4 img {
+        position: absolute;
+        left: 36.33%;
+        right: 8.33%;
+        top: 35.61%;
+        bottom: 8.33%;
+    }
+    
+    .pic4 .name
+    {
+      
+        width: 297px;
+        height: 37px;
+        left: 68px;
+        top: 300px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .pic4 .description
+    {
+        width: 300px;
+        height: 98px;
+        left: 0px;
+        top: 334px;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    /*---------------------------------------------------------------------------------------------------------------------*/
+    .img5 {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        left: 360px;
+        top: 600px;
+    }
+    
+    .pic5
+    {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        left: 360px;
+        top: 600px;
+        background: rgba(28, 50, 58, 0.29);
+        
+    }
+    .pic5 img {
+        position: absolute;
+        left: 36.33%;
+        right: 8.33%;
+        top: 35.61%;
+        bottom: 8.33%;
+    }
+    
+    .pic5 .name
+    { 
+        width: 300px;
+        height: 37px;
+        left: 68px;
+        top: 300px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .pic5 .description
+    {
+       
+        width: 300px;
+        height: 98px;
+        left: 0px;
+        top: 334px;
+        font-size: 15px;
+        line-height: 24px;
+        text-align: center;
+    }
+    /*---------------------------------------------------------------------------------------------------------------------*/
+    .img6 {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        left: 700px;
+        top: 600px;
+    }
+    
+    .pic6
+    {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        left: 700px;
+        top: 600px;
+        background: rgba(56, 2, 14, 0.29);
+        float: left;
+    }
+    
+    .pic6 img {
+        position: absolute;
+        left: 36.33%;
+        right: 8.33%;
+        top: 35.61%;
+        bottom: 8.33%;
+    }
+    
+    .pic6 .name
+    {
+        width: 300px;
+        height: 37px;
+        left: 38px;
+        top: 300px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .pic6 .description
+    {
+        width: 300px;
+        height: 98px;
+        left: 0px;
+        top: 334px;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    
+  }
 
-.pic5 .name
-{
-    position: absolute;
-    width: 303px;
-    height: 37px;
-    left: 68px;
-    top: 402px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 37px;
-    color: #000000;
-}
-.pic5 .description
-{
-    position: absolute;
-    width: 383px;
-    height: 98px;
-    left: 0px;
-    top: 454px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-    color: #000000;
-    margin-bottom: 10px;
-}
-/*---------------------------------------------------------------------------------------------------------------------*/
-.img6 {
-    position: absolute;
-    width: 386px;
-    height: 386px;
-    left: 922px;
-    top: 700px;
-}
 
-.pic6
-{
-    position: absolute;
-    width: 386px;
-    height: 386px;
-    left: 922px;
-    top: 700px;
-    background: rgba(56, 2, 14, 0.29);
-    float: left;
-}
-
-.pic6 img {
-    position: absolute;
-    left: 36.33%;
-    right: 8.33%;
-    top: 35.61%;
-    bottom: 8.33%;
-}
-
-.pic6 .name
-{
-    position: absolute;
-    width: 332px;
-    height: 37px;
-    left: 38px;
-    top: 402px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 37px;
-    color: #000000;
-}
-.pic6 .description
-{
-    position: absolute;
-    width: 383px;
-    height: 98px;
-    left: 0px;
-    top: 454px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-    color: #000000;
-    margin-bottom: 10px;
-}
-
-@media (max-width: 992px) {
+  @media (max-width: 992px) {
+     
+    label.logo p {
+        width: 169px;
+        height: 100px;
+        font-size: 25px;
+        margin-left: 50px;
+        padding-top: 25px;
+      }
+      nav ul {
+        margin-top: -110px;
+        }
+        nav ul li a {
+            font-size: 16px;
+        }
+  
     .bodyContainer {
         height: 1900px;
         width: 992px;
@@ -468,6 +727,10 @@
         height: 386px;
         left: 3rem;
         top: 26px;
+    }
+    .pic1 img {
+        width: 386px;
+        height: 386px;
     }
     .pic1 .name
     {
@@ -739,23 +1002,67 @@
 
 
 }
-@media (max-width: 786px) {
     
-    .nav-icon{
-        margin:-10px 0px 0px 0px;
-        height: 5px;
+
+  @media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    nav ul {
+        margin-top: -180px;
+        }
+
+    ul {
+        position: fixed;
         width: 100%;
-        text-align: left;
+        height: 100vh;
+        background: #1C323A;
+        top: 300px;
+        left: 100%;
+        text-align: center;
+        transition: all .5s;
+        display: none;
     }
-    .topnav a {display: none;}
-    .topnav a.icon {
-    display: block;
-    position: fixed;
-    right: 0;
+    label.logo p {
+        width: 169px;
+        height: 100px;
+        font-size: 25px;
+        margin-left: 50px;
+        padding-top: 25px;
+      }
+
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
     }
+    nav ul li a {
+        font-size: 18px;
+        color: white;
+    }
+    a:hover, a.active {
+        background: none;
+        color: #B18B11;
+    }
+    #check:checked ~ ul {
+        left: 0;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #1C323A;
+        top: 300px;
+        display: block;
+        text-align: center;
+        transition: all .5s;
+     
+    }
+  }
+ 
+  @media (max-width: 786px) {
     
     .bodyContainer {
-        height: 1500px;
+        height: 1550px;
         width: 100%;
     }
     .pic1
@@ -764,7 +1071,7 @@
         width: 300px;
         height: 300px;
         left: 20px;
-        top: 26px;
+        top: 40px;
     }
     .pic1 img {
         width: 300px;
@@ -776,7 +1083,7 @@
         width: 297px;
         height: 37px;
         left: 38px;
-        top: 322px;
+        top: 290px;
         font-weight: 500;
         font-size: 25px;
     }
@@ -787,7 +1094,7 @@
         width: 300px;
         height: 98px;
         left: 0px;
-        top: 370px;
+        top: 340px;
         font-weight: 500;
         font-size: 15px;
         margin-bottom: 10px;
@@ -800,7 +1107,7 @@
         width: 300px;
         height: 300px;
         left: 400px;
-        top: 26px;
+        top: 40px;
     }
 
     .pic2
@@ -809,7 +1116,7 @@
         width: 300px;
         height: 300px;
         left: 400px;
-        top: 26px;
+        top: 40px;
     
     }
     .pic2 img {
@@ -825,13 +1132,10 @@
         position: absolute;
         width: 297px;
         height: 37px;
-        left: 68px;
-        top: 322px;
-    
+        left: 38px;
+        top: 290px;
         font-weight: 500;
         font-size: 25px;
-
-
     }
     .pic2 .description
     {
@@ -839,33 +1143,28 @@
         width: 300px;
         height: 98px;
         left: 0px;
-        top: 370px;
+        top: 340px;
         font-weight: 500;
         font-size: 15px;
-        line-height: 24px;
-        margin-bottom: 10px;
     }
     /*---------------------------------------------------------------------------------------------------------------------*/
 
     .img3 {
-        position: absolute;
         width: 300px;
         height: 300px;
         left: 20px;
-        top: 520px;
+        top: 530px;
     }
 
     .pic3
     {
-        position: absolute;
         width: 300px;
         height: 300px;
         left: 20px;
-        top: 520px;
+        top: 530px;
     }
 
     .pic3 img {
-        position: absolute;
         left: 36.33%;
         right: 8.33%;
         top: 35.61%;
@@ -874,21 +1173,20 @@
 
     .pic3 .name
     {
-        position: absolute;
         width: 297px;
         height: 37px;
-        left: 68px;
-        top: 322px;
+        left: 38px;
+        top: 290px;
         font-weight: 500;
         font-size: 25px;
     }
     .pic3 .description
     {
-        position: absolute;
+       
         width: 300px;
         height: 98px;
         left: 0px;
-        top: 370px;
+        top: 340px;
         font-weight: 500;
         font-size: 15px;
         margin-bottom: 10px;
@@ -899,19 +1197,17 @@
         width: 300px;
         height: 300px;
         left: 400px;
-        top: 520px;
+        top: 530px;
     }
 
     .pic4
     {
-        position: absolute;
         width: 300px;
         height: 300px;
         left: 400px;
-        top: 520px;
+        top: 530px;
     }
     .pic4 img {
-        position: absolute;
         left: 36.33%;
         right: 8.33%;
         top: 35.61%;
@@ -920,26 +1216,21 @@
 
     .pic4 .name
     {
-        position: absolute;
         width: 297px;
         height: 37px;
-        left: 68px;
-        top: 322px;
+        left: 38px;
+        top: 290px;
         font-weight: 500;
         font-size: 20px;
-        color: #000000;
     }
     .pic4 .description
     {
-        position: absolute;
         width: 300px;
         height: 98px;
         left: 0px;
-        top: 370px;
+        top: 340px;
         font-weight: 500;
         font-size: 15px;
-        line-height: 24px;
-        margin-bottom: 10px;
     }
     /*---------------------------------------------------------------------------------------------------------------------*/
     .img5 {
@@ -947,7 +1238,7 @@
         width: 300px;
         height: 300px;
         left: 20px;
-        top: 1000px;
+        top: 1020px;
     }
 
 
@@ -957,11 +1248,10 @@
         width: 300px;
         height: 300px;
         left: 20px;
-        top: 1000px;
+        top: 1020px;
         
     }
     .pic5 img {
-        position: absolute;
         left: 36.33%;
         right: 8.33%;
         top: 35.61%;
@@ -970,45 +1260,40 @@
 
     .pic5 .name
     {
-        position: absolute;
         width: 303px;
         height: 37px;
-        left: 68px;
-        top: 322px;
+        left: 30px;
+        top: 290px;
         font-weight: 500;
         font-size: 25px;
     }
     .pic5 .description
     {
-        position: absolute;
         width: 300px;
         height: 98px;
         left: 0px;
-        top: 370px;
+        top: 340px;
         font-weight: 500;
         font-size: 15px;
         margin-bottom: 10px;
     }
     /*---------------------------------------------------------------------------------------------------------------------*/
     .img6 {
-        position: absolute;
         width: 300px;
         height: 300px;
         left: 400px;
-        top: 1000px;
+        top: 1020px;
     }
 
     .pic6
     {
-        position: absolute;
         width: 300px;
         height: 300px;
         left: 400px;
-        top: 1000px;
+        top: 1020px;
     }
 
     .pic6 img {
-        position: absolute;
         left: 36.33%;
         right: 8.33%;
         top: 35.61%;
@@ -1017,21 +1302,19 @@
 
     .pic6 .name
     {
-        position: absolute;
         width: 300px;
         height: 37px;
-        left: 38px;
-        top: 322px;
+        left: 30px;
+        top: 290px;
         font-weight: 500;
         font-size: 25px;
     }
     .pic6 .description
     {
-        position: absolute;
         width: 300px;
         height: 98px;
         left: 0px;
-        top: 370px;
+        top: 340px;
         font-weight: 500;
         font-size: 15px;
         line-height: 24px;
@@ -1062,10 +1345,11 @@
         position: absolute;
         width: 260px;
         height: 37px;
-        left: 45px;
-        top: 380px;
+        left: 75px;
+        top: 360px;
         font-weight: 500;
-        font-size: 30px;
+        font-size: 20px;
+        font-weight: bold;
     }
 
     .pic1 .description
@@ -1074,7 +1358,7 @@
         width: 360px;
         height: 98px;
         left: 5px;
-        top: 430px;
+        top: 390px;
         font-weight: 500;
         font-size: 20px;
         margin-bottom: 10px;
@@ -1112,10 +1396,11 @@
         position: absolute;
         width: 297px;
         height: 37px;
-        left: 68px;
-        top: 380px;
+        left: 75px;
+        top: 360px;
         font-weight: 500;
-        font-size: 30px;
+        font-size: 20px;
+        font-weight: bold;
     }
     .pic2 .description
     {
@@ -1123,7 +1408,7 @@
         width: 360px;
         height: 98px;
         left: 0px;
-        top: 430px;
+        top: 400px;
         font-weight: 500;
         font-size: 20px;
         line-height: 24px;
@@ -1161,10 +1446,11 @@
         position: absolute;
         width: 297px;
         height: 37px;
-        left: 68px;
-        top: 380px;
+        left: 75px;
+        top: 360px;
         font-weight: 500;
-        font-size: 30px;
+        font-size: 20px;
+        font-weight: bold;
     }
     .pic3 .description
     {
@@ -1172,7 +1458,7 @@
         width: 360px;
         height: 98px;
         left: 0px;
-        top: 430px;
+        top: 400px;
         font-weight: 500;
         font-size: 20px;
         margin-bottom: 10px;
@@ -1207,10 +1493,11 @@
         position: absolute;
         width: 297px;
         height: 37px;
-        left: 68px;
-        top: 380px;
+        left: 75px;
+        top: 360px;
         font-weight: 500;
-        font-size: 30px;
+        font-size: 20px;
+        font-weight: bold;
         
     }
     .pic4 .description
@@ -1219,7 +1506,7 @@
         width: 360px;
         height: 98px;
         left: 0px;
-        top: 430px;
+        top: 400px;
         font-weight: 500;
         font-size: 20px;
         line-height: 24px;
@@ -1257,10 +1544,11 @@
         position: absolute;
         width: 300px;
         height: 37px;
-        left: 68px;
-        top: 380px;
+        left: 75px;
+        top: 360px;
         font-weight: 500;
-        font-size: 30px;
+        font-size: 20px;
+        font-weight: bold;
     }
     .pic5 .description
     {
@@ -1268,7 +1556,7 @@
         width: 360px;
         height: 98px;
         left: 0px;
-        top: 430px;
+        top: 400px;
         font-weight: 500;
         font-size: 20px;
         margin-bottom: 10px;
@@ -1305,9 +1593,10 @@
         width: 300px;
         height: 37px;
         left: 38px;
-        top: 380px;
+        top: 360px;
         font-weight: 500;
-        font-size: 30px;
+        font-size: 20px;
+        font-weight: bold;
     }
     .pic6 .description
     {
@@ -1315,7 +1604,7 @@
         width: 360px;
         height: 98px;
         left: 0px;
-        top: 430px;
+        top: 400px;
         font-weight: 500;
         font-size: 20px;
         line-height: 24px;
@@ -1335,7 +1624,7 @@
         width: 300px;
         height: 300px;
         left: 15px;
-        top: 26px;
+        top: 50px;
     }
     .pic1 img {
         width: 300px;
@@ -1346,10 +1635,11 @@
         position: absolute;
         width: 300px;
         height: 37px;
-        left: 45px;
-        top: 322px;
+        left: 38px;
+        top: 302px;
         font-weight: 500;
         font-size: 20px;
+        font-weight: bold;
     }
 
     .pic1 .description
@@ -1358,7 +1648,7 @@
         width: 300px;
         height: 98px;
         left: 5px;
-        top: 370px;
+        top: 350px;
         font-weight: 500;
         font-size: 15px;
         margin-bottom: 10px;
@@ -1396,10 +1686,11 @@
         position: absolute;
         width: 300px;
         height: 37px;
-        left: 68px;
-        top: 322px;
+        left: 38px;
+        top: 302px;
         font-weight: 500;
         font-size: 20px;
+        font-weight: bold;
     }
     .pic2 .description
     {
@@ -1407,7 +1698,7 @@
         width: 300px;
         height: 98px;
         left: 0px;
-        top: 374px;
+        top: 354px;
         font-weight: 500;
         font-size: 15px;
         line-height: 24px;
@@ -1445,10 +1736,11 @@
         position: absolute;
         width: 300px;
         height: 37px;
-        left: 68px;
-        top: 322px;
+        left: 38px;
+        top: 313px;
         font-weight: 500;
         font-size: 20px;
+        font-weight: bold;
     }
     .pic3 .description
     {
@@ -1456,7 +1748,7 @@
         width: 300px;
         height: 98px;
         left: 0px;
-        top: 370px;
+        top: 360px;
         font-weight: 500;
         font-size: 15px;
         margin-bottom: 10px;
@@ -1491,10 +1783,11 @@
         position: absolute;
         width: 300px;
         height: 37px;
-        left: 68px;
-        top: 322px;
+        left: 38px;
+        top: 312px;
         font-weight: 500;
         font-size: 20px;
+        font-weight: bold;
         
     }
     .pic4 .description
@@ -1503,7 +1796,7 @@
         width: 300px;
         height: 98px;
         left: 0px;
-        top: 370px;
+        top: 360px;
         font-weight: 500;
         font-size: 15px;
         line-height: 24px;
@@ -1541,10 +1834,11 @@
         position: absolute;
         width: 300px;
         height: 37px;
-        left: 68px;
-        top: 322px;
+        left: 38px;
+        top: 302px;
         font-weight: 500;
         font-size: 20px;
+        font-weight: bold;
     }
     .pic5 .description
     {
@@ -1552,7 +1846,7 @@
         width: 300px;
         height: 98px;
         left: 0px;
-        top: 370px;
+        top: 350px;
         font-weight: 500;
         font-size: 15px;
         margin-bottom: 10px;
@@ -1563,7 +1857,7 @@
         width: 300px;
         height: 300px;
         left: 15px;
-        top: 2600px;
+        top: 2620px;
     }
 
     .pic6
@@ -1572,7 +1866,7 @@
         width: 300px;
         height: 300px;
         left: 15px;
-        top: 2600px;
+        top: 2620px;
     }
 
     .pic6 img {
@@ -1589,9 +1883,10 @@
         width: 300px;
         height: 37px;
         left: 38px;
-        top: 322px;
+        top: 302px;
         font-weight: 500;
-        font-size: 15px;
+        font-size: 20px;
+        font-weight: bold;
     }
     .pic6 .description
     {
@@ -1599,7 +1894,7 @@
         width: 300px;
         height: 98px;
         left: 0px;
-        top: 370px;
+        top: 350px;
         font-weight: 500;
         font-size: 15px;
         line-height: 24px;

@@ -3,36 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Website</title>
+    <title>Hotel Website Design</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
-
-    <div class="bigCont">
-
-    <header class="header">
-        <div class="navigation">
-            <div class="nav-icon">
-                <p>Karamo Hotel</p> 
-            </div>
-            <div class="topnav" id="myTopnav">
-                <a href="#home">HOME</a>
-                <a href="#rooms">ROOMS</a>
-                <a href="#gallery">GALLERY</a>
-                <a href="#facilities" id="active">FACILITIES</a>
-                <a href="#contact">CONTACT</a>
-                <a href="javascript:void(0);" class="icon" onclick="navFunction()">
-                <i class="fa fa-bars fa-2x"></i>
-                </a>
-            </div>
+    <nav class="nav-img">
+        <div class="navBg">
+              <input type="checkbox"  id="check">
+              <label for="check" class="checkbtn">
+                  <i class="fas fa-bars"></i>
+              </label>
+            <label for="" class="logo"><p>Karamo Hotel</p></label>
+            <ul class="listCont">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Rooms</a></li>
+                <li><a href="#">gallery</a></li>
+                <li><a class="active" href="#">Facilities</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
         </div>
-        <div class="centered">
-            <h5>Facilities</h5>
-        </div>
-    </header>
-
-
+    </nav>
+    
 
     <div class="bodyContainer">
         <!-----------------------------------------------------PICTURE 1------------------------------------------------------------------->
@@ -79,12 +72,11 @@
                 <p class="name">Therapy and Massage</p>
                 <p class="description">Enjoy an experience to remember.It is your time to experience life. Come to Karamo hotels and see what we have for you.</p>
         </div>
-        <!-----------------------------------------------------END OF BOX PICTURES-------------------------------------------------------------->
+        <!------------------------------------------------END OF BOX PICTURES-------------------------------------------------------------->
 
-        <br><br>
+        
     </div>
     </div>
-    
-    <script src="main.js"></script>
+
 </body>
 </html>
