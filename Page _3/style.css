@@ -76,6 +76,15 @@ nav ul {
   #check {
       display: none;
   }
+  .fac {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 49px;
+    color: #B18B11;
+    margin-left: 50%
+  }
 
 
   /* *------------------------------------------------------------------------------------------------------------------------*/ 
@@ -429,6 +438,15 @@ nav ul {
         width: 100%;
         top: 550px;
     }
+    .fac {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 49px;
+        color: #B18B11;
+        margin-left: 50%;
+      }
     
     .pic1
     {
@@ -715,6 +733,16 @@ nav ul {
         nav ul li a {
             font-size: 16px;
         }
+        .fac {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 49px;
+            color: #B18B11;
+            margin-left: 400px;
+           margin-top: 150px;
+          }
   
     .bodyContainer {
         height: 1900px;
@@ -1065,6 +1093,16 @@ nav ul {
         height: 1550px;
         width: 100%;
     }
+    .fac {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 49px;
+        color: #B18B11;
+        margin-left: 200px;
+       margin-top: 150px;
+      }
     .pic1
     {
         position: absolute;
@@ -1328,6 +1366,16 @@ nav ul {
         height: 3500px;
         width: 100%;
     }
+    .fac {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 49px;
+        color: #B18B11;
+        margin-left: 150px;
+       margin-top: 150px;
+      }
     .pic1
     {
         position: absolute;
@@ -1618,6 +1666,19 @@ nav ul {
         height: 3200px;
         width: 100%;
     }
+
+    .fac {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 49px;
+        color: #B18B11;
+        margin-left: 80px;
+       margin-top: 150px;
+      }
+
+
     .pic1
     {
         position: absolute;
