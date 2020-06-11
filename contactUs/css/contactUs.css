@@ -264,14 +264,14 @@ nav ul {
   font-style: normal;
   font-size: 35px;
   line-height: 33px;
-  color: black
+  color: black;
   font: bold;
 }
 .location-details{
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
-  font-size: 30px
+  font-size: 30px;
   color:black;
 }
 /* Ending of contact form*/
