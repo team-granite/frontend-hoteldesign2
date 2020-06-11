@@ -1,0 +1,346 @@
+/*---- Global style rules ----*/
+* {
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    font-family: montserrat;
+    padding: 0px;
+    margin:0px;
+    background: #E5E5E5;
+}
+.nav-img {
+    background-image: url(../images/hotelb.png);
+    width: 100%;
+    height: 606px;
+}
+.navBg {
+   
+    width: 100%;
+    height: 606px;
+    background: rgba(196, 196, 196, 0.1);
+    transform: rotate(-0.36deg);
+}
+label.logo p {
+    width: 189px;
+    height: 208px;
+    background: #1C323A;
+    font-family: Abhaya Libre ExtraBold;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    text-align: center;
+    color: #B18B11;
+    border: 1px solid #B18B11;
+    padding: 10px;
+    margin-top: -20px;
+    margin-left: 100px;
+    padding-top: 55px;
+}
+nav ul {
+    float: right;
+    margin-right: 20px;
+    margin-top: -230px;
+    text-transform: uppercase;
+    margin-right: 90px;
+}
+
+  nav ul li {
+      display: inline-block;
+      line-height: 80px;
+      margin: 20px 13px;
+  }
+  nav ul li a {
+       color: white;
+       font-family: Montserrat;
+       font-style: normal;
+       font-weight: 500;
+       font-size: 18px;
+  }
+  a.active, a:hover {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #B18B11;
+  }
+  .checkbtn {
+       font-size: 030px;
+       color: white;
+       float: right;
+       line-height: 80px;
+       margin-right: 40px;
+       margin-top: 20px;
+       cursor: pointer;
+       display: none;
+  }
+  #check {
+      display: none;
+  }
+  .fac {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 49px;
+    color: #B18B11;
+    margin-left: 40%;
+  }
+/* nav resizing */
+@media (max-width: 992px) {
+     
+  label.logo p {
+    width: 169px;
+    height: 100px;
+    font-size: 25px;
+    margin-left: 50px;
+    padding-top: 25px;
+  }
+  nav ul {
+  margin-top: -110px;
+  }
+    nav ul li a {
+      font-size: 16px;
+  }
+  .fac {
+    margin-left: 37%;
+   margin-top: 150px;
+  }
+}
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    nav ul {
+        margin-top: -180px;
+        }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #1C323A;
+        top: 300px;
+        left: 100%;
+        text-align: center;
+        transition: all .5s;
+        display: none;
+    }
+    label.logo p {
+        width: 169px;
+        height: 100px;
+        font-size: 25px;
+        margin-left: 50px;
+        padding-top: 25px;
+      }
+
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 18px;
+        color: white;
+    }
+    a:hover, a.active {
+        background: none;
+        color: #B18B11;
+    }
+    #check:checked ~ ul {
+        left: 0;
+        position: fixed;
+        width: 100%;
+        height: 485px;
+        background: #1C323A;
+        top: 300px;
+        display: block;
+        text-align: center;
+        transition: all .5s;
+     
+    }
+  }
+  @media (max-width: 786px) {
+    .fac {
+        margin-left: 200px;
+       margin-top: 150px;
+      }
+  }
+  @media (max-width: 600px){
+.fac {
+    margin-left: 25%;
+    margin-top: 150px;
+  }
+}
+ @media (max-width: 400px){
+.fac {
+    margin-left: 10%;
+    margin-top: 150px;
+  }
+}
+/* beginning of contact form container */
+.contact-container{
+  width: 100%;
+  height: 350px;
+  display: flex;
+  margin-top: 10px;
+}
+.form-container{
+  float: left;
+  order: 1;
+  margin-left: 70px;
+  width: 50%;
+  margin-top:22px;
+  text-align: center;
+}
+.box{
+  width: 320px;
+  height: 50px;
+  background: #FFFFFF;
+  border: 1px solid #D9D3D3;
+  border-radius: 15px;
+  margin-top: 10px;
+  outline: none;
+  font-size: 20px;
+  padding-left: 10px;
+}
+#message{
+  height: 130px;
+}
+#send{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #FFFFFF;
+  align-self: center;
+  margin: 12px 0px;
+  background: #B18B11;
+  border-radius: 12px;
+  width: 100px;
+  height: 40px;
+  border: none;
+  outline: none;
+}
+::placeholder{
+  font-size: 20px;
+  margin-left: 20px;
+  position: top
+}
+:-ms-input-placeholder{
+  font-size: 20px;
+  margin-left: 20px;
+  position: top
+}
+::-ms-input-placeholder{
+  font-size: 20px;
+  margin-left: 20px;
+  position: top
+}
+.details{
+  width: 45%;
+  float: right;
+  order: 2;
+  margin-left: 30px;
+}
+.location-header{
+  font-family: Montserrat;
+  font-style: normal;
+  font-size: 35px;
+  line-height: 33px;
+  color: black
+  font: bold;
+}
+.location-details{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px
+  color:black;
+}
+/* Ending of contact form*/
+.map-container{
+  background-image: url(../images/MapsicleMap.png);
+  background-position: center;
+  width: 90%;
+  height: 300px;
+  margin-left:5%;
+  margin-bottom:70px;
+  margin-top: 50px;
+}
+/*--- Footer Start  ---*/
+
+.footer{
+  background: #1C323A;
+  height: 250px;
+  width: 100%;
+  padding-top: 20px;
+}
+.address {
+  color: #fff;
+  font-size: 12pt;
+  float: left;
+  order: 2;
+  width:30%;
+  text-align: center;
+}
+
+.location {
+  opacity: 0.5;
+}
+
+.footer-logo {
+  color: #b67b2fea;
+  font-size: 5vh;
+  float: left;
+  order: 1;
+  width:30%;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.follow {
+  color: #fff;
+  float: left;
+  order: 3;
+  width: 30%;
+  text-align: center;
+}
+/* adjusting the screen for responsiveness for footer*/
+@media screen and (max-width: 900px){
+  .footer-logo{
+    width:100%;
+  }
+  .follow {
+    width:45%;
+  }
+  .address{
+    width: 45%;
+  }
+  .line-break{
+    display: none;
+  }
+  .footer{
+    height: 350px;
+  }
+}
+@media screen and (max-width: 700px){
+  .form-container{
+    width: 100%;
+    margin-left: 30px; 
+  }
+  .details{
+    width: 100%;
+    margin-left: 10px;
+    text-align: center;
+  }
+  .contact-container{
+    flex-wrap: wrap;
+    height: 600px;
+  }
+
+}
