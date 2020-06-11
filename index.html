@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Karamo Hotel</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/footer.css">
+     <link href="https://fonts-googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <!-- starting of header -->
+    <nav class="nav-img">
+        <div class="navBg">
+            <input type="checkbox"  id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label for="" class="logo"><p>Karamo Hotel</p></label>
+            <ul class="listCont">
+              <li><a href="#" class="active">Home</a></li>
+              <li><a href="pages/room.html">Rooms</a></li>
+              <li><a href="#">gallery</a></li>
+              <li><a href="pages/facilities.html" >Facilities</a></li>
+              <li><a href="pages/contactUs.html">contact</a></li>
+            </ul>
+        </div>
+        <!-- beginning of slideshow -->
+        <div class="hotel-slogan">LUXURY AT ITS PEAK</div>
+        <div class="dotdiv">
+          <span class="image-state" onclick="currentSlide(1)"></span> 
+          <span class="image-state" onclick="currentSlide(2)"></span> 
+          <span class="image-state" onclick="currentSlide(3)"></span> 
+        </div>
+        <!-- Ending of slideshow -->
+    </nav>
+    <!-- Ending of header -->
+
+    <!-- beginning of booking section -->
+    <form class="booking">
+      <div>
+        <p>Book Now</p>
+      </div>
+      <div class="group1">
+        <div class="arrival">
+          <p class="para">Arrival</p>
+          <div class="arrivalDate">
+            <input type="date" name="arrivalDate" id="arrivalDate">
+          </div>
+        </div>
+        <div class="room">
+          <p class="para">Room</p>
+          <div class="roomNumber">
+            <input type="number" name="number" id="roomNumber" min="1" max="90">
+          </div>
+        </div>
+      </div>
+      <div class="group2">
+        <div class="departing">
+          <p class="para">Departing</p>
+          <div class="date">
+            <input type="date" name="departingDate" id="departing">
+          </div>
+        </div>
+        <div class="guest">
+          <p class="para">Guest</p>
+          <div class="guestNumber">
+            <input type="number" name="number" id="guestNumber" min="1" max="5">
+          </div>
+        </div>
+      </div>
+      <div>
+        <input type="button" value="MAKE A RESERVATION">
+      </div>
+    </form>
+    <!-- Ending of booking section -->
+
+    <!-- beginnig of about us containner -->
+    <div class="about-container">
+        <div class="section-intro-container">
+            <p class="section-intro-subtitle">Welcome to Karamo Hotel</p>
+            <p class="section-intro-title">A Landmark of <br> Luxury</p>
+            <p class="section-intro-paragraph">Karamo Hotel provides a new era of glamour and style.We offer exquiste service you have not 
+                seen before. Our customers are made 
+                to experience a comfortable space a little 
+                bit more than home with our great 
+                services and facilities.</p>
+            <div class="learn">
+                <a href="#" class="learn-more">Learn more</a>
+            </div>
+        </div>
+        <div class="about-image1"></div>
+        <div class="about-image2"></div>
+        <div class="about-image3"></div>
+    </div>
+    <!-- Ending of about us container -->
+
+    <!-- beginning of room container -->
+    <div class="room-container">
+        <div class="rooms">
+            <div class="rooms-desc">
+                <h2>Rooms & Suites</h2>
+                <p>
+                    Karaoma Hotel has rooms that have a mix of elegance and style. We make sure you spend your holidays
+                    as a
+                    king or queen would. Experience a holiday where comfort meets Luxury.
+                </p>
+            </div>
+            <div class="slide-container">
+                <div class="slide" id="room1">
+                    <div class="slide-text">
+                        <h2 class="room-title">Karamo Single</h2>
+                        <p class="room-desc">
+                            Standard with a kingsize bed and a mini parlour. Very comfortable and spacious room with a
+                            modern design. This room
+                            comes with a special package of free spa treatment evry weekend.
+                        </p>
+                        <span class="cta-cost">
+                            <button class="book-btn">Book Now</button>
+                            <span class="cost">&#8358;100,000/<small>night</small></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="slide" id="room2" style="display: none;">
+                    <div class="slide-text">
+                        <h2 class="room-title">Karamo Superior</h2>
+                        <p class="room-desc">
+                            Standard with a kingsize bed and a mini parlour. Very comfortable and spacious room with a
+                            modern design. This room
+                            comes with a special package of free spa treatment evry weekend.
+                        </p>
+                        <span class="cta-cost">
+                            <button class="book-btn">Book Now</button>
+                            <span class="cost">&#8358;70,000/<small>night</small></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="slide" id="room3" style="display: none;">
+                    <div class="slide-text">
+                        <h2 class="room-title">Karamo Premium</h2>
+                        <p class="room-desc">
+                            Standard with a kingsize bed and a mini parlour. Very comfortable and spacious room with a
+                            modern design. This room
+                            comes with a special package of free spa treatment evry weekend.
+                        </p>
+                        <span class="cta-cost">
+                            <button class="book-btn">Book Now</button>
+                            <span class="cost">&#8358;80,000/<small>night</small></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="thumbs">
+                    <div class="thumb opaque" id="thumb1" onclick="currentRoom(1)"></div>
+                    <div class="thumb opaque" id="thumb2" onclick="currentRoom(2)"></div>
+                    <div class="thumb opaque" id="thumb3" onclick="currentRoom(3)"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Ending of room container -->
+
+    <!-- beginning of gallery section -->
+    <div class="background">
+        <div class="container">
+            <div class="white-background">
+                <div class="imgdiv">
+                    <div class="circle">
+                        <div class="right-arrow">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text" >
+            <div class="textdiv">
+                <div class="text1">Enjoy the scenery</div>
+                <div class="text2">Take a tour round Kamora Hotels</div>
+                <div class="text3">We have beautiful sceneries that would catch your fancy. We have elegant staff to give you the treatment you so desire. Ultimately we have the facilities you have always dreamed of in any hotel. Kamora Hotels got your covered!</div>
+                <div class="read-more">
+                    <div class="arrow"><i class="fas fa-long-arrow-alt-left"></i></div>
+                    <div class="text4">Watch Now</div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- Ending of gallery section -->
+
+    <!-- beginning of facilities section -->
+    <div class="facilities-container">
+        <div class="facilities">
+            <div class="head-title">
+                <h2>Facilities</h2>
+            </div>
+            <div class="fac-desc">
+                <p>
+                    We have all these facilities and more to make your stay an enjoyable one. it is one click away to
+                    make a reservation.
+                </p>
+            </div>
+            <div class="facs" id="first-facs">
+                <div class="fac1">
+                    <img src="images/restaurant.svg" alt="restaurant illustration" class="fac-svg">
+                    <p>Restaurant & Bar</p>
+                </div>
+                <div class="fac1">
+                    <img src="images/pool.svg" alt="pool illustration" class="fac-svg">
+                    <p>Olympic sized pool</p>
+                </div>
+            </div>
+            <div class="facs" id="second-facs">
+                <div class="fac1">
+                    <img src="images/spa.svg" alt="spa illustration" class="fac-svg">
+                    <p>Spa & Wellness</p>
+                </div>
+                <div class="fac1">
+                    <img src="images/fitness.svg" alt="fitness illustration" class="fac-svg">
+                    <p>Exercise & Fitness</p>
+                </div>
+            </div>
+            <div class="facs" id="third-facs">
+                <div class="fac1">
+                    <img src="images/laundry.svg" alt="laundry illustration" class="fac-svg">
+                    <p>Laundry Services</p>
+                </div>
+                <div class="fac1">
+                    <img src="images/therapy.svg" alt="therapy illustration" class="fac-svg">
+                    <p>Therapy and Massage</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Ending of facilities section -->
+
+    <!-- beginning Contact us section-->
+    <section id="contact_us">
+        <img class="contact-us-img" src="images/hotelb1.png" alt="hotel receptionist">
+        <div id="contact_form">
+            <h3 class="contactus-header">Contact Us</h3>
+            <form action="" class="contactus-form">
+                <input type="text" class="holder" "name" placeholder="Name" id="name" name="name">
+                <input type="text" class="holder" "email" placeholder="Email" id="email" name="email">
+                <input type="text" class="holder" "message" placeholder="Message" id="message" name="message">
+                <input type="submit" class="holder" id="send_info" value="Send">
+            </form>
+        </div>
+    </section>
+    <!-- Ending Contact us section-->
+
+  <!-- beginning of footer -->
+  <div class="footer">
+    <h3 class="footer-logo">
+      Karamo <br class="line-break">
+      Hotel
+    </h3>
+    <div class="address">
+      <h3>Location</h3>
+      <div class="location">
+        <p>
+          No 245 Adeola Akegun street, <br>
+          Lagos,<br />
+          Nigeria.
+        </p>
+
+        <Telephone>+234809489736</Telephone><br />
+        <email>karamohetel@gmail.com</email>
+      </div>
+    </div>
+    <div class="follow">
+      <h3>Connect with Us:</h3>
+      <br />
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-youtube-play"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+      <p class="copyright">Team-Granite &copy; 2020</p>
+    </div>
+  </div>
+
+</body>
+<script src="javascript/room.js"></script>
+</html>
