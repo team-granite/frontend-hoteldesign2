@@ -87,7 +87,7 @@ nav ul {
     font-size: 40px;
     line-height: 49px;
     color: #B18B11;
-    margin-left: 50%
+    margin-left: 40%;
   }
 /* nav resizing */
 @media (max-width: 992px) {
@@ -106,13 +106,7 @@ nav ul {
       font-size: 16px;
   }
   .fac {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 49px;
-    color: #B18B11;
-    margin-left: 400px;
+    margin-left: 37%;
    margin-top: 150px;
   }
 }
@@ -172,25 +166,19 @@ nav ul {
   }
   @media (max-width: 786px) {
     .fac {
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 40px;
-        line-height: 49px;
-        color: #B18B11;
         margin-left: 200px;
        margin-top: 150px;
       }
   }
   @media (max-width: 600px){
 .fac {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 49px;
-    color: #B18B11;
-    margin-left: 150px;
+    margin-left: 25%;
+    margin-top: 150px;
+  }
+}
+ @media (max-width: 400px){
+.fac {
+    margin-left: 10%;
     margin-top: 150px;
   }
 }
@@ -322,7 +310,7 @@ nav ul {
   width: 30%;
   text-align: center;
 }
-/* adjusting the screen for responsiveness*/
+/* adjusting the screen for responsiveness for footer*/
 @media screen and (max-width: 900px){
   .footer-logo{
     width:100%;
