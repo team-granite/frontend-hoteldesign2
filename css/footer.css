@@ -1,0 +1,72 @@
+/*--- Footer Start  ---*/
+.footer{
+  background: #1C323A;
+  height: 250px;
+  width: 100%;
+  padding-top: 20px;
+}
+.address {
+  color: #fff;
+  font-size: 12pt;
+  float: left;
+  order: 2;
+  width:30%;
+  text-align: center;
+}
+
+.location {
+  opacity: 0.5;
+}
+
+.footer-logo {
+  color: #b67b2fea;
+  font-size: 5vh;
+  float: left;
+  order: 1;
+  width:30%;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.follow {
+  color: #fff;
+  float: left;
+  order: 3;
+  width: 30%;
+  text-align: center;
+}
+/* adjusting the screen for responsiveness for footer */
+@media screen and (max-width: 900px){
+  .footer-logo{
+    width:100%;
+  }
+  .follow {
+    width:45%;
+  }
+  .address{
+    width: 45%;
+  }
+  .line-break{
+    display: none;
+  }
+  .footer{
+    height: 350px;
+  }
+}
+@media screen and (max-width: 450px){
+  .footer-logo{
+    width:100%;
+  }
+  .follow {
+    width:100%;
+  }
+  .address{
+    width: 100%;
+  }
+  .line-break{
+    display: none;
+  }
+  .footer{
+    height: 500px;
+  }
+}
