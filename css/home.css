@@ -17,51 +17,27 @@ body{
     background-image: url(../images/landingpagepicture.png);
     width: 100%;
     height: 900px;
+    animation: chbg 15s infinite alternate;
+}
+@keyframes chbg {
+  0% {
+    background:url(../images/landingpagepicture.png);
+    background-size:cover
+  }
+  60% {
+    background:url(../images/792bde889998651.png);
+    background-size:cover
+  }
+  100% {
+    background:url(../images/4a0958735462572.png);
+    background-size:cover
+  }
 }
 .navBg {
 	height: 900px;
 }
-/*ending of nav bar image*/
-
-/* begining of slidingshow body*/
-.slideshow-container{
-	position: absolute;
-    z-index: 7;
-    width: 65%;
-    height: 400px;
-    top: 200px;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 50px;
-    background: red;
-}
-.slideimage{
-	max-width: 100%;
-	max-height: 100%;
-	border-radius: 50px;
-	position: 
-}
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: 60px;
-    height: 50px;
-    color: white;
-    font-weight: bold;
-    font-size: 28px;
-}
-.next {
-    right: 5px;
-    text-align: right;
-}
-.prev {
-    left: : 0;
-}
 .hotel-slogan{
-	color: white;
+  color: white;
     font-size: 60px;
     padding: 8px 12px;
     position: absolute;
@@ -69,28 +45,18 @@ body{
     width: 100%;
     text-align: center;
     font-weight: bolder;
+    z-index: 1;
 }
 .dotdiv{
-	width: 100%;
+  width: 100%;
     height: 50px;
     position: absolute;
     top: 820px;
     text-align: right;
     padding-right: 50px;
 }
-.image-state{
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 5px;
-  padding: 5px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-  color: white;
-}
-/* Ending of slidingshow body*/
+/*ending of nav bar image*/
+
 
 /* booking area */
 .booking {
