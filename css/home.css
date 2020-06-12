@@ -22,15 +22,15 @@ body{
 @keyframes chbg {
   0% {
     background:url(../images/landingpagepicture.png);
-    background-size:cover
+    background-size:cover;
   }
   60% {
     background:url(../images/792bde889998651.png);
-    background-size:cover
+    background-size:cover;
   }
   100% {
     background:url(../images/4a0958735462572.png);
-    background-size:cover
+    background-size:cover;
   }
 }
 .navBg {
@@ -112,29 +112,14 @@ input[type="button"] {
     flex-direction: column;
   }
   .group1, .group2 {
-    display: flex;
-    justify-content: space-around;
+    margin-left: 2rem;
     width: 80%;
-    align-items: center;
-  }
-  .arrivalDate input{
-    margin-left: 48px;
-  }
-  .roomNumber input{
-    margin-left: 53px;
-  }
-  .date input{
-    margin-left: 20px;
-  }
-  .guestNumber input{
-    margin-left: 53px;
   }
   .guest, .room {
     margin-top: 20px;
   }
   .guest, .room {
     margin-top: 0px;
-    margin-left: 20px;
   }
   .booking {
     padding-top: 15px;
@@ -156,12 +141,9 @@ input[type="button"] {
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-
-    /* align-items: center; */
   }
   .guest, .room {
     margin-top: 10px;
-    margin-left: 20px;
   }
   .booking {
     padding-top: 15px;
@@ -795,12 +777,10 @@ input[type="button"] {
 }
 /* Ending of gallery section */
 
-/* beginning of facilities section */
+
 .facilities-container {
     width: 100%;
     padding: 5% 10%;
-    height: 100%;
-    box-sizing: border-box;
 }
 
 .facilities {
@@ -822,11 +802,12 @@ input[type="button"] {
     margin-left: -10%;
     text-align: center;
     color: #fff;
-    font-size: 20px
+    font-size: 20px;
 }
 
 .head-title h2 {
     margin: 0;
+    text-align: center;
 }
 
 .fac-desc {
@@ -841,7 +822,7 @@ input[type="button"] {
     height: auto;
     flex: 1 0 auto;
     display: flex;
-
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
@@ -871,19 +852,30 @@ input[type="button"] {
 }
 
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 220px) {
     .facilities {
         flex-direction: column;
     }
 
+    .facilities-container{
+        padding: 0;
+    }
+
+    .head-title{
+        position: initial;
+        padding: 2rem;
+    }
+
     .fac-desc {
-        width: 90%;
+        /* width: 90%;
         margin-left: -45%;
+        padding-top: 15rem; */
+        position: initial;
     }
 
     .facs {
         width: 100%;
-        padding: 30% 5%;
+        padding: 10% 5%;
         flex-direction: row;
     }
 
@@ -895,8 +887,8 @@ input[type="button"] {
     }
 
     .fac1:nth-child(odd) {
-        border-right: solid 2px #fff;
-
+        /* border-right: solid 2px #fff; */
+        position: initial;
     }
 
     .fac-svg {
@@ -914,7 +906,10 @@ input[type="button"] {
     .fac-desc {
         width: 50%;
         margin-left: -25%;
-        font-size: 18px
+        font-size: 18px;
+    }
+    .head-title{
+        position: absolute;
     }
 
     .facs {
