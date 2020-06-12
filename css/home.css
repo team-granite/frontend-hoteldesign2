@@ -7,7 +7,7 @@
 }
 
 body{
-  font-family: montserrat;
+  font-family: 'Poppins', sans-serif;
   padding: 0;
   margin: 0;
   background: #F3F3F3;;
@@ -22,15 +22,15 @@ body{
 @keyframes chbg {
   0% {
     background:url(../images/landingpagepicture.png);
-    background-size:cover
+    background-size:cover;
   }
   60% {
     background:url(../images/792bde889998651.png);
-    background-size:cover
+    background-size:cover;
   }
   100% {
     background:url(../images/4a0958735462572.png);
-    background-size:cover
+    background-size:cover;
   }
 }
 .navBg {
@@ -112,29 +112,14 @@ input[type="button"] {
     flex-direction: column;
   }
   .group1, .group2 {
-    display: flex;
-    justify-content: space-around;
+    margin-left: 2rem;
     width: 80%;
-    align-items: center;
-  }
-  .arrivalDate input{
-    margin-left: 48px;
-  }
-  .roomNumber input{
-    margin-left: 53px;
-  }
-  .date input{
-    margin-left: 20px;
-  }
-  .guestNumber input{
-    margin-left: 53px;
   }
   .guest, .room {
     margin-top: 20px;
   }
   .guest, .room {
     margin-top: 0px;
-    margin-left: 20px;
   }
   .booking {
     padding-top: 15px;
@@ -156,12 +141,9 @@ input[type="button"] {
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-
-    /* align-items: center; */
   }
   .guest, .room {
     margin-top: 10px;
-    margin-left: 20px;
   }
   .booking {
     padding-top: 15px;
@@ -218,9 +200,11 @@ input[type="button"] {
     padding: 1rem;
     background-color: #B18B11;
 }
+
 .learn-more:hover{
 	color: white;
 }
+
 .about-image1{
 	position: absolute;
 	margin-left: 0;
@@ -230,6 +214,7 @@ input[type="button"] {
     background-repeat: no-repeat;
 	background-image: url(../images/Group2.png);
 }
+
 .about-image2{
 	position: absolute;
 	right: 0;
@@ -239,6 +224,7 @@ input[type="button"] {
     background-repeat: no-repeat;
 	background-image: url(../images/Screenshot1.png);
 }
+
 .about-image3{
 	position: absolute;
 	right:25%;
@@ -263,7 +249,8 @@ input[type="button"] {
 		right: 0px;
 	}
 	.about-container{
-		height: 1050px;
+        height: 1050px;
+        margin-bottom: 3rem;
 	}
 }
 @media (max-width: 810px) {
@@ -305,6 +292,25 @@ input[type="button"] {
 		height: 1850px;
 	}
 }
+@media (max-width: 760px){
+    .about-image1,
+    .about-image2,
+    .about-image3{
+        display: none;
+    }
+    .section-intro-container{
+        position: initial;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    .about-container{
+        height: auto;
+        margin: 0 auto;
+    }
+    .section-intro-paragraph{
+        margin-right: 3rem;
+    }
+}
 /* Ending responsive section for about us */
 /* ending of about us section */
 
@@ -313,6 +319,7 @@ input[type="button"] {
     width: 100%;
     padding: 5% 10%;
     height: 100%;
+    background-color: #1C323A;
 }
 
 .rooms {
@@ -320,22 +327,28 @@ input[type="button"] {
     width: 100%;
     height: auto;
     padding: 5%;
-    background-color: #1C323A;
-
 }
 
 .rooms-desc {
     width: 100%;
     padding: 5%;
     height: auto;
-
     text-align: center;
 }
 
 .rooms-desc h2 {
     margin: 2rem auto;
     color: #B18B11;
-    border-bottom: solid 2px #B18B11;
+}
+
+.rooms-desc h2::after{
+    content: '';
+    display: block;
+    width: 4em;
+    height: 1.5px;
+    margin: 0.5em auto 1em;
+    background: #B18B11;
+    opacity: 0.25;
 }
 
 .rooms-desc p {
@@ -380,18 +393,13 @@ input[type="button"] {
 
 .slide {
     position: relative;
-    /* width: 100%;
-    height: 40vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; */
 }
 
 .slide-text {
     position: absolute;
     height: auto;
     padding: 3%;
-    background-color: rgba(177, 140, 17, 0.733);
+    background-color: rgba(177, 177, 168, 0.733);
     color: #fff;
     bottom: 0;
     display: flex;
@@ -474,10 +482,6 @@ input[type="button"] {
 
 
 @media screen and (min-width: 320px) {
-    .rooms-desc p {
-        width: 80%;
-    }
-
     .rooms-desc h2 {
         width: 80%;
     }
@@ -493,17 +497,14 @@ input[type="button"] {
 }
 
 @media screen and (min-width: 768px) {
-    .rooms-desc p {
-        width: 40%;
-    }
-
     .rooms-desc h2 {
-        width: 50%;
+        width: 70%;
     }
 
     .slide-text {
         left: 50%;
         width: 50%;
+        font-size: .8rem;
     }
 
     .room-desc {
@@ -555,7 +556,6 @@ input[type="button"] {
   height: 70vh;
 }
 .text1 {
-  font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
   font-size: 1.5rem;
@@ -563,7 +563,6 @@ input[type="button"] {
 
 }
 .text2 {
-  font-family: Abhaya Libre ExtraBold;
   font-style: normal;
   font-weight: 800;
   font-size: 3.37rem;
@@ -571,7 +570,6 @@ input[type="button"] {
   padding: .5rem .5rem .5rem 0;
 }
 .text3 {
-  font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 1.25rem;
@@ -584,7 +582,6 @@ input[type="button"] {
   width: 35%;
 }
 .text4 {
-  font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
   font-size: 1.37rem;
@@ -678,20 +675,20 @@ input[type="button"] {
       height: auto;
   }
   .text1 {
-      font-size: 1.2rem;
+      font-size: 1rem;
   }
   .text2 {
-      font-size: 2.4rem;
+      font-size: 2rem;
       padding: .1rem;
   }
   .text3 {
-      font-size: 1.1rem;
+      font-size: 1rem;
   }
   .fas {
       font-size: 1.5rem;
   }
   .text4 {
-      font-size: 1.1rem;
+      font-size: 1rem;
   }
   .read-more {
       width: 30%;
@@ -702,6 +699,11 @@ input[type="button"] {
       display: flex;
       flex-direction: column;
   }
+
+  .container {
+    width: 100% !important;
+  }
+
   .imgdiv {
       left: 0px;
   }
@@ -715,19 +717,21 @@ input[type="button"] {
       margin: 0.5rem;
   }
   .text1 {
-      font-size: 1.2rem;
+      font-size: .8rem;
   }
   .text2 {
-      font-size: 1.5rem;
+      font-size: 1rem;
+      margin-top: 0.5rem;
   }
   .text3 {
-      font-size: 1rem;
+      font-size: .8rem;
+      margin-top: 0.5rem;
   }
   .fas {
       font-size: 1.1rem;
   }
   .text4 {
-      font-size: 1rem;
+      font-size: .8rem;
   }
   .read-more {
       margin-top: 0.4rem;
@@ -773,13 +777,10 @@ input[type="button"] {
 }
 /* Ending of gallery section */
 
-/* beginning of facilities section */
+
 .facilities-container {
     width: 100%;
     padding: 5% 10%;
-    height: 100%;
-    box-sizing: border-box;
-    font-family: sans-serif
 }
 
 .facilities {
@@ -801,11 +802,12 @@ input[type="button"] {
     margin-left: -10%;
     text-align: center;
     color: #fff;
-    font-size: 20px
+    font-size: 20px;
 }
 
 .head-title h2 {
     margin: 0;
+    text-align: center;
 }
 
 .fac-desc {
@@ -820,7 +822,7 @@ input[type="button"] {
     height: auto;
     flex: 1 0 auto;
     display: flex;
-
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
@@ -850,19 +852,30 @@ input[type="button"] {
 }
 
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 220px) {
     .facilities {
         flex-direction: column;
     }
 
+    .facilities-container{
+        padding: 0;
+    }
+
+    .head-title{
+        position: initial;
+        padding: 2rem;
+    }
+
     .fac-desc {
-        width: 90%;
+        /* width: 90%;
         margin-left: -45%;
+        padding-top: 15rem; */
+        position: initial;
     }
 
     .facs {
         width: 100%;
-        padding: 30% 5%;
+        padding: 10% 5%;
         flex-direction: row;
     }
 
@@ -874,8 +887,8 @@ input[type="button"] {
     }
 
     .fac1:nth-child(odd) {
-        border-right: solid 2px #fff;
-
+        /* border-right: solid 2px #fff; */
+        position: initial;
     }
 
     .fac-svg {
@@ -893,7 +906,10 @@ input[type="button"] {
     .fac-desc {
         width: 50%;
         margin-left: -25%;
-        font-size: 18px
+        font-size: 18px;
+    }
+    .head-title{
+        position: absolute;
     }
 
     .facs {
@@ -921,12 +937,6 @@ input[type="button"] {
 /* Ending of facilities section */
 
 /* Ending of contact us form */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-    *{font-family: 'Montserrat'; 
-} 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-    *{font-family: 'Roboto';
-}
 #contact_us{
     width: 100%;
     height: 580px;
@@ -948,7 +958,6 @@ input[type="button"] {
 }
 .contactus-header{
     width: 200.86px;
-    font-family: 'Montserrat' sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
@@ -963,11 +972,11 @@ input[type="button"] {
     flex-direction: column;
 }
 #name{
-    height: 83px;
+    /* height: 83px; */
     padding-left: 20px;
 }
 #email{
-    height: 83px;
+    /* height: 83px; */
     padding-left: 20px;
 }
 #message{
@@ -999,7 +1008,6 @@ input[type="button"] {
     box-sizing: border-box;
     margin: 0 auto 20px auto;
     font-size: 20px;
-    font-family: 'Roboto' sans-serif;
     font-weight: 500;
     line-height: 32px;
     outline: none;
@@ -1007,7 +1015,6 @@ input[type="button"] {
     border-radius: 20px
 }
 #send_info{
-    font-family: 'Roboto' sans-serif;
     width: 100px;
     height: 50px;
     color: #FFFFFF;
@@ -1018,10 +1025,24 @@ input[type="button"] {
     margin: 0 auto 20px auto;
     border: 1px solid #FFFFFF;
 }
+@media screen and (max-width: 425px){
+   .holder{
+       width: 80%;
+   }
+   .contact-us-img{
+       height: 60%;
+   }
+}
 /* Ending of contact us form*/
-@media screen and (max-width: 900px){
+@media screen and (max-width: 425px){
 .footer {
     height: 360px;
-    margin-top: 530px;
+    margin-top: 300px !important;
   }
 }
+@media screen and (max-width: 900px){
+    .footer {
+        height: 360px;
+        margin-top: 530px;
+      }
+    }
