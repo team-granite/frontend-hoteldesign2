@@ -102,52 +102,13 @@ body {
 }
 /* Ending of contact form*/
 .map-container{
-  background-image: url(../images/MapsicleMap.png);
-  background-position: center;
-  width: 90%;
-  height: 300px;
-  margin-left:5%;
+  width: 95%;
+  height: 350px;
+  margin-left:2.5%;
   margin-bottom:70px;
   margin-top: 50px;
 }
 /*--- Footer Start  ---*/
-
-.footer{
-  background: #1C323A;
-  height: 250px;
-  width: 100%;
-  padding-top: 20px;
-}
-.address {
-  color: #fff;
-  font-size: 12pt;
-  float: left;
-  order: 2;
-  width:30%;
-  text-align: center;
-}
-
-.location {
-  opacity: 0.5;
-}
-
-.footer-logo {
-  color: #b67b2fea;
-  font-size: 5vh;
-  float: left;
-  order: 1;
-  width:30%;
-  text-align: center;
-  margin-top: 5px;
-}
-
-.follow {
-  color: #fff;
-  float: left;
-  order: 3;
-  width: 30%;
-  text-align: center;
-}
 /* adjusting the screen for responsiveness for footer*/
 @media screen and (max-width: 900px){
   .footer-logo{
