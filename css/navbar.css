@@ -4,6 +4,7 @@
     height: 606px;
     background: rgba(196, 196, 196, 0.1);
     transform: rotate(-0.36deg);
+    position: relative;
 }
 label.logo p {
     width: 189px;
@@ -27,6 +28,7 @@ nav ul {
     margin-top: -230px;
     text-transform: uppercase;
     margin-right: 90px;
+    z-index: 2;
 }
 
   nav ul li {
