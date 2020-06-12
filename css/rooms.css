@@ -59,7 +59,7 @@ body {
 .room-image {
   background-size: cover;
   width: 55%;
-  height: 500px;
+  height: 600px;
   display: flex;
   align-items: flex-end;
   color: white;
@@ -81,7 +81,7 @@ body {
 
 .room-description {
   width: 45%;
-  max-height: 500px;
+  max-height: 600px;
   background: #b18b11;
   color: white;
   padding: 90px 50px;
@@ -122,6 +122,81 @@ body {
     width: 100%;
     line-height: 1.5;
   }
+  .room-action span {
+    font-size: 1rem;
+  }
 }
 
-/* footer style here */
+@media screen and (max-width: 630px) {
+  #rooms-container {
+    padding: 3.025rem 1rem;
+  }
+  
+  .room-view {
+    display: block;
+  }
+
+  .room-image, .room-description {
+    width: 100%;
+  }
+
+  .room-description{
+    padding: 1rem;
+  }
+
+  .room-description > p {
+    width: 100%;
+    line-height: 1.5;
+    font-size: 1.2rem;
+  }
+  .room-image{
+    height: 230px;
+  }
+  
+  .room-two-image{
+    background-image: url(../images/premium.png);
+  }
+  
+  .room-three-image{
+    background-image: url(../images/single.png);
+  }
+}
+@media all and (max-width: 450px){
+  .booking-btn{
+    line-height: 1.3;
+    font-size: .8rem;
+  }
+  .room-action h2{
+    margin: 1rem;
+    font-size: 1rem;
+  } 
+}
+
+@media all and (max-width: 400px){
+  .room-action {
+    display: block;
+    margin-top: 2rem;
+    justify-content: space-between;
+  }
+  .room-action h2{
+    margin: 1rem;
+    font-size: 1rem;
+  } 
+  .booking-btn{
+    line-height: 1.3;
+    font-size: .8rem;
+  }
+  .room-description > p {
+    margin-bottom: 1rem;
+  }
+}
+
+@media all and (max-width: 340px){
+  .room-description{
+    height: 400px;
+  }
+  .room-description > p {
+    margin-bottom: 1rem;
+    font-size: .8rem;
+  }
+}
