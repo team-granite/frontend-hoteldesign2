@@ -68,7 +68,7 @@ body {
 }
 
 .room-one-image{
-  background-image: url(../images/r2.jpg);
+  background-image: url(../images/dc412e96668419%201.png);
 }
 
 .room-two-image{
@@ -149,17 +149,17 @@ body {
     line-height: 1.5;
     font-size: 1.2rem;
   }
-  /* .room-image{
+  .room-image{
     height: 230px;
-  } */
-/*   
+  }
+  
   .room-two-image{
     background-image: url(../images/premium.png);
   }
   
   .room-three-image{
     background-image: url(../images/single.png);
-  } */
+  }
 }
 @media all and (max-width: 450px){
   .booking-btn{
